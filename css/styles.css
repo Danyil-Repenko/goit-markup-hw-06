@@ -690,11 +690,14 @@ ul {
 }
 
 .input-label {
-  display: block;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+
+.input-text {
+  display: block;
+  margin-bottom: 4px;
   cursor: pointer;
   color: #757575;
 }
@@ -747,6 +750,7 @@ ul {
   transform: translateY(-50%);
   transition: color 250ms var(--animation-patern);
   fill: currentColor;
+  cursor: pointer;
 }
 
 .input-field:focus + .modal-icon {
