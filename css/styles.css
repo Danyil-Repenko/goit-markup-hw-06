@@ -47,15 +47,15 @@ ul {
   display: flex;
 }
 
-.nav .nav-element + .nav-element {
+.nav__element + .nav__element {
   margin-left: 50px;
 }
 
-.nav-element {
+.nav__element {
   position: relative;
 }
 
-.activev::after {
+.nav__page--active::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -66,7 +66,7 @@ ul {
   border-radius: 2px;
 }
 
-.adress-element + .adress-element {
+.adress__element + .adress__element {
   margin-left: 30px;
 }
 
@@ -79,18 +79,18 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.second_half {
+.logo--second-half {
   margin-right: 93px;
   color: var(--headers-color);
 }
 
-.second_half_footer {
+.footer__logo--second-half {
   display: block;
   margin-bottom: 20px;
   color: var(--bg-color);
 }
 
-.page_nav,
+.nav__page,
 .portf {
   font-weight: 500;
   line-height: 1.14;
@@ -99,16 +99,16 @@ ul {
   text-decoration: none;
 }
 
-.page_nav,
-.adress_link {
+.nav__page,
+.adress__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms var(--animation-patern);
 }
 
-.first_half,
-.activev,
+.logo--first-half,
+.nav__page--active,
 .terms-of-use-link {
   color: var(--accent-color);
 }
@@ -119,7 +119,7 @@ ul {
   margin-left: auto;
 }
 
-.adress_link {
+.adress__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -131,16 +131,16 @@ ul {
   text-align: center;
 }
 
-.adress-icon {
+.adress__icon {
   margin-right: 10px;
   fill: currentColor;
   float: left;
 }
 
-.page_nav:hover,
-.adress_link:hover,
-.page_nav:focus,
-.adress_link:focus,
+.nav__page:hover,
+.adress__link:hover,
+.nav__page:focus,
+.adress__link:focus,
 .adress_link_footer:focus,
 .adress_link_footer:hover {
   color: var(--accent-color);
@@ -170,7 +170,7 @@ ul {
   background-size: cover;
 }
 
-.page_header {
+.hero__header {
   font-weight: 900;
   font-size: 44px;
   color: var(--bg-color);
@@ -228,11 +228,11 @@ ul {
   height: auto;
 }
 
-.pros-item {
+.advantages__item {
   max-width: 270px;
 }
 
-.pros-icons {
+.advantages__iconss {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,12 +241,12 @@ ul {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.pros-icon {
+.advantages__icon {
   width: 70px;
   height: 70px;
   align-items: center;
 }
-.pros-item + .pros-item,
+.advantages__item + .advantages__item,
 .picture-item + .picture-item,
 .crew_el:not(:first-child),
 .clients-list-el + .clients-list-el {
@@ -274,8 +274,9 @@ ul {
   text-decoration: none;
 }
 
-.intro-paragraf,
-.picture-summary {
+.advantages__paragraf,
+.picture-summary,
+.follow-us-paragraf {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -284,7 +285,7 @@ ul {
   text-transform: uppercase;
 }
 
-.intro-text {
+.advantages__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -323,6 +324,7 @@ ul {
 .clients-header {
   margin-bottom: 50px;
 }
+
 .crew_head {
   margin-bottom: 10px;
   font-weight: 700;
@@ -520,11 +522,11 @@ ul {
   margin-right: 70px;
 }
 
-.footer-el + .footer-el {
+.adress__el + .adress__el {
   margin-top: 9px;
 }
 
-.adress_location {
+.adress__location {
   display: inline-block;
   padding: 0;
   color: var(--bg-color);
@@ -600,10 +602,6 @@ ul {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  /* font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6); */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
@@ -647,6 +645,8 @@ ul {
   width: 1px;
   white-space: nowrap;
 }
+
+/* modal */
 
 .backdrop {
   position: fixed;
@@ -785,6 +785,7 @@ ul {
   color: #757575;
   padding-left: 22px;
   margin: 0;
+  cursor: pointer;
 }
 
 .terms-of-use:checked ~ .checkbox-icon {

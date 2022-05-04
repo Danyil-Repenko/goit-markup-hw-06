@@ -23,35 +23,35 @@
   <body>
     <header class="header">
       <div class="container flex-container">
-        <a href="/" class="logo second_half"
-          ><span class="logo first_half">Web</span>Studio</a
+        <a href="/" class="logo logo--second-half"
+          ><span class="logo logo--first-half">Web</span>Studio</a
         >
         <nav>
           <ul class="nav">
-            <li class="nav-element">
-              <a class="page_nav" href="./index.html">Студия</a>
+            <li class="nav__element">
+              <a class="nav__page" href="./index.html">Студия</a>
             </li>
-            <li class="nav-element">
-              <a class="page_nav activev" href="./portfolio.html">Портфолио</a>
+            <li class="nav__element nav__page--active">
+              <a class="nav__page" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-element">
-              <a class="page_nav" href="/">Контакты</a>
+            <li class="nav__element">
+              <a class="nav__page" href="/">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="adresses">
-          <li class="adress-element">
-            <a class="adress_link" href="mailto:info@devstudio.com">
-              <svg class="adress-icon" width="16" height="12">
+          <li class="adress__element">
+            <a class="adress__link" href="mailto:info@devstudio.com">
+              <svg class="adress__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-icon"></use>
               </svg>
               info@devstudio.com</a
             >
             <!--змінити не можу, Prettier виправляє-->
           </li>
-          <li class="adress-element">
-            <a class="adress_link" href="tel:+380961111111"
-              ><svg class="adress-icon" width="10" height="16">
+          <li class="adress__element">
+            <a class="adress__link" href="tel:+380961111111"
+              ><svg class="adress__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone-icon"></use>
               </svg>
               +38 096 111 11 11</a
@@ -292,25 +292,25 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="adresses-section">
-          <a href="/" class="logo second_half_footer"
-            ><span class="logo first_half">Web</span>Studio</a
+          <a href="/" class="logo footer__logo--second-half"
+            ><span class="logo logo--first-half">Web</span>Studio</a
           >
           <address>
-            <ul class="footer-list">
-              <li class="footer-el">
+            <ul class="footer-adress">
+              <li class="adress__el">
                 <a
-                  class="adress_link adress_location"
+                  class="adress__link adress__location"
                   href="https://goo.gl/maps/9vUaXhKTsJwgG6u79"
                   target="_blank"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-el">
+              <li class="adress__el">
                 <a class="adress_link_footer" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer-el">
+              <li class="adress__el">
                 <a class="adress_link_footer" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
@@ -319,7 +319,7 @@
           </address>
         </div>
         <div class="follow-us">
-          <h3 class="intro-paragraf follow-us-paragraf">присоединяйтесь</h3>
+          <h3 class="follow-us-paragraf">присоединяйтесь</h3>
           <ul class="follow-us-links">
             <li class="follow-us-el">
               <a class="follow-us-link" href="/">
@@ -352,9 +352,7 @@
           </ul>
         </div>
         <div class="contact-modal">
-          <h3 class="intro-paragraf follow-us-paragraf">
-            Подпишитесь на рассылку
-          </h3>
+          <h3 class="follow-us-paragraf">Подпишитесь на рассылку</h3>
           <form class="contact-form" autocomplete="off">
             <input
               type="email"
